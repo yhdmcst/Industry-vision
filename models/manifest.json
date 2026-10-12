@@ -1,0 +1,11 @@
+{
+  "model_name": "spark-drift:1.7b-q4",
+  "official_model": "Spark-X2.5-1.7B",
+  "repository": "XHToken/Spark-X2.5-1.7B-GGUF",
+  "source": "ModelScope",
+  "revision": "d3b20396a0e68d5dad5712a064d6898e23a3efe0",
+  "file": "spark-x2.5-1.7b/Spark-X2.5-1.7B-Q4_K_M.gguf",
+  "size": 1107457856,
+  "sha256": "902bde2522394954ac17821b3e5fd0df02defbc6944f122253f2580acf0503f4",
+  "license": "Apache-2.0"
+}

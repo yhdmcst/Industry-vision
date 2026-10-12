@@ -1,0 +1,60 @@
+{
+  "observed": 1791170348.7386637,
+  "results": [
+    "desktop loaded and single-frame sampling succeeded",
+    "timed capture starts and pauses",
+    "real local model review displayed",
+    "operator assessment saved against model snapshot",
+    "download reflects latest sample and operator assessment",
+    "JSON evidence export includes real model review",
+    "history view works",
+    "evidence view matches selected official model",
+    "mobile 390px layout has no horizontal page overflow",
+    "nonlocal endpoint rejected and local connection restored",
+    "baseline reset blocks capture until recalibration"
+  ],
+  "page_errors": [],
+  "browser": "installed Edge / Playwright",
+  "viewports": [
+    "1440x1080",
+    "390x844"
+  ],
+  "url": "http://127.0.0.1:8501",
+  "model": "spark-drift:4b-q4",
+  "pixel_checks": {
+    "desktop.png": {
+      "dimensions": [
+        1440,
+        1080
+      ],
+      "rgb_stddev": [
+        59.53575234144996,
+        53.85185223048725,
+        62.481276087689686
+      ]
+    },
+    "model-review.png": {
+      "dimensions": [
+        1440,
+        1080
+      ],
+      "rgb_stddev": [
+        62.93217639754369,
+        56.393728721010035,
+        64.77171225567207
+      ]
+    },
+    "mobile.png": {
+      "dimensions": [
+        390,
+        844
+      ],
+      "rgb_stddev": [
+        55.80163990559981,
+        35.17156786637924,
+        36.43681990144049
+      ]
+    }
+  },
+  "visual_inspection_performed": false
+}

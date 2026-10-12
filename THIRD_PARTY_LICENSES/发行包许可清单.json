@@ -1,0 +1,424 @@
+{
+  "source": "current npm lock and installed production packages",
+  "not_a_blanket_rights_certificate": true,
+  "packages": [
+    {
+      "package": "node_modules/@reduxjs/toolkit",
+      "version": "2.13.0",
+      "declared_license": "MIT",
+      "notices": [
+        "THIRD_PARTY_LICENSES/node_modules__@reduxjs__toolkit/LICENSE"
+      ],
+      "requires_team_license_review": false
+    },
+    {
+      "package": "node_modules/@standard-schema/spec",
+      "version": "1.1.0",
+      "declared_license": "MIT",
+      "notices": [
+        "THIRD_PARTY_LICENSES/node_modules__@standard-schema__spec/LICENSE"
+      ],
+      "requires_team_license_review": false
+    },
+    {
+      "package": "node_modules/@standard-schema/utils",
+      "version": "0.3.0",
+      "declared_license": "MIT",
+      "notices": [
+        "THIRD_PARTY_LICENSES/node_modules__@standard-schema__utils/LICENSE"
+      ],
+      "requires_team_license_review": false
+    },
+    {
+      "package": "node_modules/@types/d3-array",
+      "version": "3.2.2",
+      "declared_license": "MIT",
+      "notices": [
+        "THIRD_PARTY_LICENSES/node_modules__@types__d3-array/LICENSE"
+      ],
+      "requires_team_license_review": false
+    },
+    {
+      "package": "node_modules/@types/d3-color",
+      "version": "3.1.3",
+      "declared_license": "MIT",
+      "notices": [
+        "THIRD_PARTY_LICENSES/node_modules__@types__d3-color/LICENSE"
+      ],
+      "requires_team_license_review": false
+    },
+    {
+      "package": "node_modules/@types/d3-ease",
+      "version": "3.0.2",
+      "declared_license": "MIT",
+      "notices": [
+        "THIRD_PARTY_LICENSES/node_modules__@types__d3-ease/LICENSE"
+      ],
+      "requires_team_license_review": false
+    },
+    {
+      "package": "node_modules/@types/d3-interpolate",
+      "version": "3.0.4",
+      "declared_license": "MIT",
+      "notices": [
+        "THIRD_PARTY_LICENSES/node_modules__@types__d3-interpolate/LICENSE"
+      ],
+      "requires_team_license_review": false
+    },
+    {
+      "package": "node_modules/@types/d3-path",
+      "version": "3.1.1",
+      "declared_license": "MIT",
+      "notices": [
+        "THIRD_PARTY_LICENSES/node_modules__@types__d3-path/LICENSE"
+      ],
+      "requires_team_license_review": false
+    },
+    {
+      "package": "node_modules/@types/d3-scale",
+      "version": "4.0.9",
+      "declared_license": "MIT",
+      "notices": [
+        "THIRD_PARTY_LICENSES/node_modules__@types__d3-scale/LICENSE"
+      ],
+      "requires_team_license_review": false
+    },
+    {
+      "package": "node_modules/@types/d3-shape",
+      "version": "3.2.0",
+      "declared_license": "MIT",
+      "notices": [
+        "THIRD_PARTY_LICENSES/node_modules__@types__d3-shape/LICENSE"
+      ],
+      "requires_team_license_review": false
+    },
+    {
+      "package": "node_modules/@types/d3-time",
+      "version": "3.0.4",
+      "declared_license": "MIT",
+      "notices": [
+        "THIRD_PARTY_LICENSES/node_modules__@types__d3-time/LICENSE"
+      ],
+      "requires_team_license_review": false
+    },
+    {
+      "package": "node_modules/@types/d3-timer",
+      "version": "3.0.2",
+      "declared_license": "MIT",
+      "notices": [
+        "THIRD_PARTY_LICENSES/node_modules__@types__d3-timer/LICENSE"
+      ],
+      "requires_team_license_review": false
+    },
+    {
+      "package": "node_modules/@types/react",
+      "version": "19.3.0",
+      "declared_license": "MIT",
+      "notices": [
+        "THIRD_PARTY_LICENSES/node_modules__@types__react/LICENSE"
+      ],
+      "requires_team_license_review": false
+    },
+    {
+      "package": "node_modules/@types/use-sync-external-store",
+      "version": "0.0.6",
+      "declared_license": "MIT",
+      "notices": [
+        "THIRD_PARTY_LICENSES/node_modules__@types__use-sync-external-store/LICENSE"
+      ],
+      "requires_team_license_review": false
+    },
+    {
+      "package": "node_modules/clsx",
+      "version": "2.1.1",
+      "declared_license": "MIT",
+      "notices": [
+        "THIRD_PARTY_LICENSES/node_modules__clsx/license"
+      ],
+      "requires_team_license_review": false
+    },
+    {
+      "package": "node_modules/csstype",
+      "version": "3.2.3",
+      "declared_license": "MIT",
+      "notices": [
+        "THIRD_PARTY_LICENSES/node_modules__csstype/LICENSE"
+      ],
+      "requires_team_license_review": false
+    },
+    {
+      "package": "node_modules/d3-array",
+      "version": "3.2.4",
+      "declared_license": "ISC",
+      "notices": [
+        "THIRD_PARTY_LICENSES/node_modules__d3-array/LICENSE"
+      ],
+      "requires_team_license_review": false
+    },
+    {
+      "package": "node_modules/d3-color",
+      "version": "3.1.0",
+      "declared_license": "ISC",
+      "notices": [
+        "THIRD_PARTY_LICENSES/node_modules__d3-color/LICENSE"
+      ],
+      "requires_team_license_review": false
+    },
+    {
+      "package": "node_modules/d3-ease",
+      "version": "3.0.1",
+      "declared_license": "BSD-3-Clause",
+      "notices": [
+        "THIRD_PARTY_LICENSES/node_modules__d3-ease/LICENSE"
+      ],
+      "requires_team_license_review": false
+    },
+    {
+      "package": "node_modules/d3-format",
+      "version": "3.1.2",
+      "declared_license": "ISC",
+      "notices": [
+        "THIRD_PARTY_LICENSES/node_modules__d3-format/LICENSE"
+      ],
+      "requires_team_license_review": false
+    },
+    {
+      "package": "node_modules/d3-interpolate",
+      "version": "3.0.1",
+      "declared_license": "ISC",
+      "notices": [
+        "THIRD_PARTY_LICENSES/node_modules__d3-interpolate/LICENSE"
+      ],
+      "requires_team_license_review": false
+    },
+    {
+      "package": "node_modules/d3-path",
+      "version": "3.1.0",
+      "declared_license": "ISC",
+      "notices": [
+        "THIRD_PARTY_LICENSES/node_modules__d3-path/LICENSE"
+      ],
+      "requires_team_license_review": false
+    },
+    {
+      "package": "node_modules/d3-scale",
+      "version": "4.0.2",
+      "declared_license": "ISC",
+      "notices": [
+        "THIRD_PARTY_LICENSES/node_modules__d3-scale/LICENSE"
+      ],
+      "requires_team_license_review": false
+    },
+    {
+      "package": "node_modules/d3-shape",
+      "version": "3.2.0",
+      "declared_license": "ISC",
+      "notices": [
+        "THIRD_PARTY_LICENSES/node_modules__d3-shape/LICENSE"
+      ],
+      "requires_team_license_review": false
+    },
+    {
+      "package": "node_modules/d3-time",
+      "version": "3.1.0",
+      "declared_license": "ISC",
+      "notices": [
+        "THIRD_PARTY_LICENSES/node_modules__d3-time/LICENSE"
+      ],
+      "requires_team_license_review": false
+    },
+    {
+      "package": "node_modules/d3-time-format",
+      "version": "4.1.0",
+      "declared_license": "ISC",
+      "notices": [
+        "THIRD_PARTY_LICENSES/node_modules__d3-time-format/LICENSE"
+      ],
+      "requires_team_license_review": false
+    },
+    {
+      "package": "node_modules/d3-timer",
+      "version": "3.0.1",
+      "declared_license": "ISC",
+      "notices": [
+        "THIRD_PARTY_LICENSES/node_modules__d3-timer/LICENSE"
+      ],
+      "requires_team_license_review": false
+    },
+    {
+      "package": "node_modules/decimal.js-light",
+      "version": "2.5.1",
+      "declared_license": "MIT",
+      "notices": [
+        "THIRD_PARTY_LICENSES/node_modules__decimal.js-light/LICENCE.md"
+      ],
+      "requires_team_license_review": false
+    },
+    {
+      "package": "node_modules/es-toolkit",
+      "version": "1.52.0",
+      "declared_license": "MIT",
+      "notices": [
+        "THIRD_PARTY_LICENSES/node_modules__es-toolkit/LICENSE",
+        "THIRD_PARTY_LICENSES/node_modules__es-toolkit/NOTICE"
+      ],
+      "requires_team_license_review": false
+    },
+    {
+      "package": "node_modules/eventemitter3",
+      "version": "5.0.4",
+      "declared_license": "MIT",
+      "notices": [
+        "THIRD_PARTY_LICENSES/node_modules__eventemitter3/LICENSE"
+      ],
+      "requires_team_license_review": false
+    },
+    {
+      "package": "node_modules/immer",
+      "version": "11.1.21",
+      "declared_license": "MIT",
+      "notices": [
+        "THIRD_PARTY_LICENSES/node_modules__immer/LICENSE"
+      ],
+      "requires_team_license_review": false
+    },
+    {
+      "package": "node_modules/internmap",
+      "version": "2.0.3",
+      "declared_license": "ISC",
+      "notices": [
+        "THIRD_PARTY_LICENSES/node_modules__internmap/LICENSE"
+      ],
+      "requires_team_license_review": false
+    },
+    {
+      "package": "node_modules/lucide-react",
+      "version": "0.468.0",
+      "declared_license": "ISC",
+      "notices": [
+        "THIRD_PARTY_LICENSES/node_modules__lucide-react/LICENSE"
+      ],
+      "requires_team_license_review": false
+    },
+    {
+      "package": "node_modules/react",
+      "version": "19.3.0",
+      "declared_license": "MIT",
+      "notices": [
+        "THIRD_PARTY_LICENSES/node_modules__react/LICENSE"
+      ],
+      "requires_team_license_review": false
+    },
+    {
+      "package": "node_modules/react-dom",
+      "version": "19.3.0",
+      "declared_license": "MIT",
+      "notices": [
+        "THIRD_PARTY_LICENSES/node_modules__react-dom/LICENSE"
+      ],
+      "requires_team_license_review": false
+    },
+    {
+      "package": "node_modules/react-is",
+      "version": "19.3.0",
+      "declared_license": "MIT",
+      "notices": [
+        "THIRD_PARTY_LICENSES/node_modules__react-is/LICENSE"
+      ],
+      "requires_team_license_review": false
+    },
+    {
+      "package": "node_modules/react-redux",
+      "version": "9.3.0",
+      "declared_license": "MIT",
+      "notices": [
+        "THIRD_PARTY_LICENSES/node_modules__react-redux/LICENSE.md"
+      ],
+      "requires_team_license_review": false
+    },
+    {
+      "package": "node_modules/recharts",
+      "version": "3.10.1",
+      "declared_license": "MIT",
+      "notices": [
+        "THIRD_PARTY_LICENSES/node_modules__recharts/LICENSE"
+      ],
+      "requires_team_license_review": false
+    },
+    {
+      "package": "node_modules/redux",
+      "version": "5.0.1",
+      "declared_license": "MIT",
+      "notices": [
+        "THIRD_PARTY_LICENSES/node_modules__redux/LICENSE.md"
+      ],
+      "requires_team_license_review": false
+    },
+    {
+      "package": "node_modules/redux-thunk",
+      "version": "3.1.0",
+      "declared_license": "MIT",
+      "notices": [
+        "THIRD_PARTY_LICENSES/node_modules__redux-thunk/LICENSE.md"
+      ],
+      "requires_team_license_review": false
+    },
+    {
+      "package": "node_modules/reselect",
+      "version": "5.2.0",
+      "declared_license": "MIT",
+      "notices": [
+        "THIRD_PARTY_LICENSES/node_modules__reselect/LICENSE"
+      ],
+      "requires_team_license_review": false
+    },
+    {
+      "package": "node_modules/scheduler",
+      "version": "0.28.0",
+      "declared_license": "MIT",
+      "notices": [
+        "THIRD_PARTY_LICENSES/node_modules__scheduler/LICENSE"
+      ],
+      "requires_team_license_review": false
+    },
+    {
+      "package": "node_modules/tiny-invariant",
+      "version": "1.3.3",
+      "declared_license": "MIT",
+      "notices": [
+        "THIRD_PARTY_LICENSES/node_modules__tiny-invariant/LICENSE"
+      ],
+      "requires_team_license_review": false
+    },
+    {
+      "package": "node_modules/use-sync-external-store",
+      "version": "1.7.0",
+      "declared_license": "MIT",
+      "notices": [
+        "THIRD_PARTY_LICENSES/node_modules__use-sync-external-store/LICENSE"
+      ],
+      "requires_team_license_review": false
+    },
+    {
+      "package": "node_modules/victory-vendor",
+      "version": "37.3.6",
+      "declared_license": "MIT AND ISC",
+      "notices": [
+        "THIRD_PARTY_LICENSES/node_modules__victory-vendor/lib-vendor/d3-array/LICENSE",
+        "THIRD_PARTY_LICENSES/node_modules__victory-vendor/lib-vendor/d3-color/LICENSE",
+        "THIRD_PARTY_LICENSES/node_modules__victory-vendor/lib-vendor/d3-ease/LICENSE",
+        "THIRD_PARTY_LICENSES/node_modules__victory-vendor/lib-vendor/d3-format/LICENSE",
+        "THIRD_PARTY_LICENSES/node_modules__victory-vendor/lib-vendor/d3-interpolate/LICENSE",
+        "THIRD_PARTY_LICENSES/node_modules__victory-vendor/lib-vendor/d3-path/LICENSE",
+        "THIRD_PARTY_LICENSES/node_modules__victory-vendor/lib-vendor/d3-scale/LICENSE",
+        "THIRD_PARTY_LICENSES/node_modules__victory-vendor/lib-vendor/d3-shape/LICENSE",
+        "THIRD_PARTY_LICENSES/node_modules__victory-vendor/lib-vendor/d3-time/LICENSE",
+        "THIRD_PARTY_LICENSES/node_modules__victory-vendor/lib-vendor/d3-time-format/LICENSE",
+        "THIRD_PARTY_LICENSES/node_modules__victory-vendor/lib-vendor/d3-timer/LICENSE",
+        "THIRD_PARTY_LICENSES/node_modules__victory-vendor/lib-vendor/d3-voronoi/LICENSE",
+        "THIRD_PARTY_LICENSES/node_modules__victory-vendor/lib-vendor/internmap/LICENSE"
+      ],
+      "requires_team_license_review": false
+    }
+  ]
+}

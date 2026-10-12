@@ -1,0 +1,17 @@
+system:
+  name: Spark Guard
+  version: "0.3.0"
+model:
+  name: "spark-drift:1.7b-q4"
+  endpoint: "http://127.0.0.1:11435"
+  context_length: 4096
+monitoring:
+  baseline_samples: 20
+  window_size: 30
+  refresh_seconds: 0.7
+  alert_recovery_samples: 3
+storage:
+  database: "data/db/drift_monitor.db"
+safety:
+  human_review_only: true
+  automatic_actuation: false
