@@ -1,0 +1,197 @@
+{
+  "observed": 1791170888.8047523,
+  "input_sha256": "c7c33e10db7042e0e53853a0583d8ec33594969bd7e00f530da5b84ef1610c03",
+  "model": "spark-drift:4b-q4",
+  "results": [
+    {
+      "scenario": "focus_change",
+      "prompt_sha256": "c49750abd37497bda55268e4d922902b343c3fdbe930c0044543fa07de141f71",
+      "fast_result": {
+        "model": "spark-drift:4b-q4",
+        "analysis": {
+          "alternative_causes": [],
+          "confidence_score": 95,
+          "drift_detected": false,
+          "drift_type": "none",
+          "evidence": [
+            "水平位移0.0像素，垂直位移0.01像素",
+            "亮度变化-0.06%，对比度变化-21.04%"
+          ],
+          "recommendations": [
+            "维持当前检测流程，无需调整阈值"
+          ],
+          "requires_human_review": true,
+          "root_cause": "各项指标稳定，无异常触发，可能原因为none",
+          "urgency": "low",
+          "verification_steps": [
+            "人工复核设备运行状态及环境参数"
+          ]
+        },
+        "inference": {
+          "backend": "ollama",
+          "model": "spark-drift:4b-q4",
+          "elapsed_ms": 2500.37,
+          "prompt_tokens": 734,
+          "output_tokens": 187,
+          "tokens_per_second": 83.16,
+          "load_ms": 1.5416,
+          "finish_reason": "stop",
+          "runtime": {
+            "parent_model": "Spark-X2.5-4B-Q4_K_M.gguf",
+            "format": "gguf",
+            "family": "spark2_5",
+            "families": [
+              "spark2_5"
+            ],
+            "parameter_size": "4.1B",
+            "quantization_level": "Q4_K_M",
+            "weight_sha256": "adfcfa19a4ed6a5985da8bf565fe15f8e1a7e131d79bae2d19d48d1c40109428",
+            "runtime_version": "0.35.1"
+          },
+          "request_settings": {
+            "thinking": false,
+            "max_tokens": 1024,
+            "context_length": 4096,
+            "temperature": 0.2,
+            "top_p": 0.95,
+            "seed": 42
+          }
+        }
+      },
+      "status": "error",
+      "error": "Local inference failed: Model returned an empty answer",
+      "raw_response": "",
+      "inference": {
+        "backend": "ollama",
+        "model": "spark-drift:4b-q4",
+        "elapsed_ms": 41596.97,
+        "prompt_tokens": 734,
+        "output_tokens": 3072,
+        "tokens_per_second": 74.23,
+        "load_ms": 1.0868,
+        "finish_reason": "length",
+        "runtime": {
+          "parent_model": "Spark-X2.5-4B-Q4_K_M.gguf",
+          "format": "gguf",
+          "family": "spark2_5",
+          "families": [
+            "spark2_5"
+          ],
+          "parameter_size": "4.1B",
+          "quantization_level": "Q4_K_M",
+          "weight_sha256": "adfcfa19a4ed6a5985da8bf565fe15f8e1a7e131d79bae2d19d48d1c40109428",
+          "runtime_version": "0.35.1"
+        },
+        "request_settings": {
+          "thinking": true,
+          "max_tokens": 3072,
+          "context_length": 4096,
+          "temperature": 0.2,
+          "top_p": 0.95,
+          "seed": 42
+        }
+      },
+      "thinking_characters": 5291
+    },
+    {
+      "scenario": "light_fade",
+      "prompt_sha256": "42e2ca47a28d31fe393e4b615030f527e15276f678ecda384b3e4828aab37611",
+      "fast_result": {
+        "model": "spark-drift:4b-q4",
+        "analysis": {
+          "alternative_causes": [
+            "光学系统污染或失焦导致清晰度下降",
+            "工装或产品摆位异常引发整体指标变化"
+          ],
+          "confidence_score": 45,
+          "drift_detected": true,
+          "drift_type": "optical",
+          "evidence": [
+            "清晰度变化-58.23%",
+            "亮度变化-34.97%",
+            "NG百分数100.0%（基线0.0%）"
+          ],
+          "recommendations": [
+            "人工核验光学与摆位状态",
+            "暂不执行停线、放行等操作"
+          ],
+          "requires_human_review": true,
+          "root_cause": "光学系统失焦或污染导致清晰度大幅下降，伴随亮度变化",
+          "urgency": "medium",
+          "verification_steps": [
+            "检查光学镜头污染与对焦状态",
+            "核查工装及产品摆位是否异常"
+          ]
+        },
+        "inference": {
+          "backend": "ollama",
+          "model": "spark-drift:4b-q4",
+          "elapsed_ms": 3318.76,
+          "prompt_tokens": 748,
+          "output_tokens": 256,
+          "tokens_per_second": 83.78,
+          "load_ms": 1.206,
+          "finish_reason": "stop",
+          "runtime": {
+            "parent_model": "Spark-X2.5-4B-Q4_K_M.gguf",
+            "format": "gguf",
+            "family": "spark2_5",
+            "families": [
+              "spark2_5"
+            ],
+            "parameter_size": "4.1B",
+            "quantization_level": "Q4_K_M",
+            "weight_sha256": "adfcfa19a4ed6a5985da8bf565fe15f8e1a7e131d79bae2d19d48d1c40109428",
+            "runtime_version": "0.35.1"
+          },
+          "request_settings": {
+            "thinking": false,
+            "max_tokens": 1024,
+            "context_length": 4096,
+            "temperature": 0.2,
+            "top_p": 0.95,
+            "seed": 42
+          }
+        }
+      },
+      "status": "error",
+      "error": "Local inference failed: Model returned an empty answer",
+      "raw_response": "",
+      "inference": {
+        "backend": "ollama",
+        "model": "spark-drift:4b-q4",
+        "elapsed_ms": 35925.29,
+        "prompt_tokens": 748,
+        "output_tokens": 3072,
+        "tokens_per_second": 86.05,
+        "load_ms": 1.0771,
+        "finish_reason": "length",
+        "runtime": {
+          "parent_model": "Spark-X2.5-4B-Q4_K_M.gguf",
+          "format": "gguf",
+          "family": "spark2_5",
+          "families": [
+            "spark2_5"
+          ],
+          "parameter_size": "4.1B",
+          "quantization_level": "Q4_K_M",
+          "weight_sha256": "adfcfa19a4ed6a5985da8bf565fe15f8e1a7e131d79bae2d19d48d1c40109428",
+          "runtime_version": "0.35.1"
+        },
+        "request_settings": {
+          "thinking": true,
+          "max_tokens": 3072,
+          "context_length": 4096,
+          "temperature": 0.2,
+          "top_p": 0.95,
+          "seed": 42
+        }
+      },
+      "thinking_characters": 5086
+    }
+  ],
+  "limitations": [
+    "Debugging cases, not a held-out evaluation.",
+    "Different model comparisons confound size and thinking; use the same model for a mode ablation."
+  ]
+}

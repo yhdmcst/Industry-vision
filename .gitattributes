@@ -1,0 +1,25 @@
+# Normalize cross-platform text in Git without rewriting application sources.
+* text=auto
+*.py text eol=lf
+*.py.larkcache text eol=lf diff=python
+*.md text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.json text eol=lf
+*.toml text eol=lf
+*.txt text eol=lf
+*.ps1 text eol=crlf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+models/Modelfile* text eol=lf
+
+# Historical evidence includes hashes of other evidence files. Preserve bytes.
+artifacts/*.json -text !eol whitespace=cr-at-eol
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.pdf binary
+*.pptx binary
+*.zip binary
+*.gguf binary

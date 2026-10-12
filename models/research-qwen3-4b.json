@@ -1,0 +1,14 @@
+{
+  "model_name": "review-baseline:qwen3-4b-q4",
+  "official_model": "Qwen3-4B",
+  "repository": "Qwen/Qwen3-4B-GGUF",
+  "revision": "bc640142c66e1fdd12af0bd68f40445458f3869b",
+  "file": "research-qwen3-4b/Qwen3-4B-Q4_K_M.gguf",
+  "size": 2497280256,
+  "sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+  "family": "qwen3",
+  "license": "Apache-2.0",
+  "modelscope_revision": "8cca206c792af04f8d452368bd30b43ec18007f1",
+  "url": "https://huggingface.co/Qwen/Qwen3-4B-GGUF/resolve/bc640142c66e1fdd12af0bd68f40445458f3869b/Qwen3-4B-Q4_K_M.gguf",
+  "scope": "Research comparison only; unavailable as a workstation deployment target. Official GGUF weights, no upstream source code copied."
+}

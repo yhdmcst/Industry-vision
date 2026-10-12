@@ -1,0 +1,27 @@
+{
+  "observed": 1791170401.3824558,
+  "source": "camera",
+  "camera_index": 0,
+  "backend": "dshow",
+  "camera_opened": true,
+  "frames_received": true,
+  "source_signal_usable": false,
+  "status": "calibration_rejected",
+  "baseline_metrics": {
+    "sharpness": 0.00900925252225664,
+    "brightness": 7.000124837239584,
+    "contrast": 0.04899947512482769,
+    "noise_level": 0.025948711288187192,
+    "overexposure_ratio": 0.0,
+    "underexposure_ratio": 0.0,
+    "saturation": 141.72282291666664,
+    "histogram_entropy": 0.016441008286847
+  },
+  "error": "基线过暗、过曝或缺少纹理；检查镜头遮挡、曝光与工位取景后重新采集。",
+  "saved_camera_pixels": false,
+  "reviews": [],
+  "limitations": [
+    "Camera acquisition is available but the sampled scene is too dark or lacks texture.",
+    "No valid calibrated camera/model workflow or industrial evaluation was established."
+  ]
+}

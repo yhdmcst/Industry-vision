@@ -1,0 +1,4 @@
+FROM ./spark-x2.5-1.7b/Spark-X2.5-1.7B-Q4_K_M.gguf
+PARAMETER num_ctx 4096
+PARAMETER temperature 0.2
+PARAMETER top_p 0.95

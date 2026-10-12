@@ -1,0 +1,1126 @@
+{
+  "observed": 1791122816.077628,
+  "platform": "Windows",
+  "python": "3.12.14",
+  "cpu_logical": 24,
+  "memory_total_bytes": 34056994816,
+  "model_manifest": {
+    "model_name": "spark-drift:1.7b-q4",
+    "official_model": "Spark-X2.5-1.7B",
+    "repository": "XHToken/Spark-X2.5-1.7B-GGUF",
+    "source": "ModelScope",
+    "revision": "d3b20396a0e68d5dad5712a064d6898e23a3efe0",
+    "file": "spark-x2.5-1.7b/Spark-X2.5-1.7B-Q4_K_M.gguf",
+    "size": 1107457856,
+    "sha256": "902bde2522394954ac17821b3e5fd0df02defbc6944f122253f2580acf0503f4",
+    "license": "Apache-2.0",
+    "verified": true
+  },
+  "loaded_model_evidence": {
+    "models": [
+      {
+        "name": "spark-drift:1.7b-q4",
+        "model": "spark-drift:1.7b-q4",
+        "size": 1204855766,
+        "digest": "30513d7496f86f8d3370a3e5e6d27fc879c1fae04a11892408bc017f1be21493",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "spark2_5",
+          "families": [
+            "spark2_5"
+          ],
+          "parameter_size": "1.7B",
+          "quantization_level": "Q4_K_M"
+        },
+        "expires_at": "2026-10-04T22:16:56.050185+08:00",
+        "size_vram": 1204855766,
+        "context_length": 4096
+      }
+    ]
+  },
+  "cases": [
+    {
+      "analysis": {
+        "alternative_causes": [
+          "镜头光学参数异常（如镜片表面污点、色差或光学畸变）导致清晰度下降，但亮度未发生明显改变",
+          "光源强度波动（如环境光变化、光源位置偏移）导致整体亮度变化，同时清晰度受光照均匀性影响出现局部下降"
+        ],
+        "confidence_score": 3,
+        "drift_detected": false,
+        "drift_type": "none",
+        "evidence": [
+          "当前帧（frame 30）清晰度指标（sharpness 823.99）与帧26-29的指标完全一致，无显著波动；亮度、对比度、噪声等指标均无异常变化",
+          "检测器（reference_residual_demo）未标记NG，当前帧NG率为0；平移配准响应为1.0，位移为0.0，未发现明显平移异常"
+        ],
+        "recommendations": [
+          "人工复核：对比帧26-29与帧30的清晰度、亮度、对比度等指标，确认是否存在局部清晰度下降或亮度异常；检查镜头光学参数及光源环境，判断清晰度下降是否由镜头或光照因素导致",
+          "人工复核：确认平移配准状态，验证当前帧与历史帧的位移是否稳定，排查是否存在因平移导致的清晰度变化"
+        ],
+        "requires_human_review": true,
+        "root_cause": "none",
+        "urgency": "low",
+        "verification_steps": [
+          "人工复核：对比帧26-29与帧30的图像指标，确认清晰度、亮度等是否出现异常变化，判断是否为局部或整体异常",
+          "人工复核：检查镜头光学参数（如镜片表面状态、光学畸变），确认清晰度下降是否由镜头因素导致",
+          "人工复核：核查光源环境（如光照强度、光源位置），确认亮度变化是否由光照因素导致"
+        ]
+      },
+      "raw_response": "{\"alternative_causes\": [\n  \"镜头光学参数异常（如镜片表面污点、色差或光学畸变）导致清晰度下降，但亮度未发生明显改变\",\n  \"光源强度波动（如环境光变化、光源位置偏移）导致整体亮度变化，同时清晰度受光照均匀性影响出现局部下降\"\n],\n  \"confidence_score\": 3,\n  \"drift_detected\": false,\n  \"drift_type\": \"none\",\"evidence\": [\n    \"当前帧（frame 30）清晰度指标（sharpness 823.99）与帧26-29的指标完全一致，无显著波动；亮度、对比度、噪声等指标均无异常变化\",\n    \"检测器（reference_residual_demo）未标记NG，当前帧NG率为0；平移配准响应为1.0，位移为0.0，未发现明显平移异常\"\n  ],\n  \"recommendations\": [\n    \"人工复核：对比帧26-29与帧30的清晰度、亮度、对比度等指标，确认是否存在局部清晰度下降或亮度异常；检查镜头光学参数及光源环境，判断清晰度下降是否由镜头或光照因素导致\",\n    \"人工复核：确认平移配准状态，验证当前帧与历史帧的位移是否稳定，排查是否存在因平移导致的清晰度变化\"\n  ],\"requires_human_review\": true,\n  \"root_cause\": \"none\",\"urgency\": \"low\",\"verification_steps\": [\n    \"人工复核：对比帧26-29与帧30的图像指标，确认清晰度、亮度等是否出现异常变化，判断是否为局部或整体异常\",\n    \"人工复核：检查镜头光学参数（如镜片表面状态、光学畸变），确认清晰度下降是否由镜头因素导致\",\n    \"人工复核：核查光源环境（如光照强度、光源位置），确认亮度变化是否由光照因素导致\"\n  ]}",
+      "inference": {
+        "backend": "ollama",
+        "model": "spark-drift:1.7b-q4",
+        "elapsed_ms": 5101.98,
+        "prompt_tokens": 1369,
+        "output_tokens": 465,
+        "tokens_per_second": 140.01,
+        "load_ms": 1509.1322,
+        "finish_reason": "stop",
+        "runtime": {
+          "parent_model": "Spark-X2.5-1.7B-Q4_K_M.gguf",
+          "format": "gguf",
+          "family": "spark2_5",
+          "families": [
+            "spark2_5"
+          ],
+          "parameter_size": "1.7B",
+          "quantization_level": "Q4_K_M",
+          "runtime_version": "0.35.1"
+        }
+      },
+      "snapshot": {
+        "frame": 30,
+        "created": 1791122799.208936,
+        "source": "synthetic",
+        "synthetic": true,
+        "injected": false,
+        "baseline_generation": 2,
+        "window_count": 30,
+        "warmup": false,
+        "vision_ms": 13.31,
+        "detection": {
+          "timestamp": 1791122799.1959417,
+          "detected": true,
+          "confidence": 1.0,
+          "is_ng": false,
+          "metadata": {
+            "detector": "reference_residual_demo",
+            "residual": 0.0
+          }
+        },
+        "current_metrics": {
+          "image_quality": {
+            "sharpness": 823.9862174479167,
+            "brightness": 100.36621744791667,
+            "contrast": 21.88626732178974,
+            "noise_level": 7.2379929116638255,
+            "overexposure_ratio": 0.0,
+            "underexposure_ratio": 0.0,
+            "saturation": 63.16056966145833,
+            "histogram_entropy": 1.5026254448275578
+          },
+          "consistency": {
+            "confidence_mean": 1.0,
+            "confidence_std": 0.0,
+            "confidence_min": 1.0,
+            "confidence_max": 1.0,
+            "ng_rate": 0.0,
+            "detection_rate": 1.0,
+            "stability_score": 1.0
+          },
+          "relative_changes": {
+            "sharpness_change": 0.0,
+            "brightness_change": 1.4159001979502203e-16,
+            "contrast_change": 1.623261576113281e-16,
+            "noise_change": -1.227105954012265e-16
+          },
+          "registration": {
+            "shift_x": 0.0,
+            "shift_y": 0.0,
+            "response": 1.0
+          }
+        },
+        "baseline": {
+          "sample_count": 20,
+          "image_quality": {
+            "sharpness": 823.9862174479167,
+            "brightness": 100.36621744791665,
+            "contrast": 21.886267321789738,
+            "noise_level": 7.237992911663826,
+            "overexposure_ratio": 0.0,
+            "underexposure_ratio": 0.0,
+            "saturation": 63.160569661458325,
+            "histogram_entropy": 1.5026254448275578
+          },
+          "consistency": {
+            "confidence_mean": 1.0,
+            "confidence_std": 0.0,
+            "confidence_min": 1.0,
+            "confidence_max": 1.0,
+            "ng_rate": 0.0,
+            "detection_rate": 1.0,
+            "stability_score": 1.0
+          }
+        },
+        "recent_trend": [
+          {
+            "frame": 26,
+            "confidence": 1.0,
+            "sharpness": 823.9862174479167,
+            "brightness": 100.36621744791667
+          },
+          {
+            "frame": 27,
+            "confidence": 1.0,
+            "sharpness": 823.9862174479167,
+            "brightness": 100.36621744791667
+          },
+          {
+            "frame": 28,
+            "confidence": 1.0,
+            "sharpness": 823.9862174479167,
+            "brightness": 100.36621744791667
+          },
+          {
+            "frame": 29,
+            "confidence": 1.0,
+            "sharpness": 823.9862174479167,
+            "brightness": 100.36621744791667
+          },
+          {
+            "frame": 30,
+            "confidence": 1.0,
+            "sharpness": 823.9862174479167,
+            "brightness": 100.36621744791667
+          }
+        ],
+        "limitation": "Reference-residual demo detector; no product defect ground truth or environmental sensors."
+      },
+      "operator_context": "近期没有维护记录；没有温湿度传感器。",
+      "created": 1791122804.3685155,
+      "provenance": "local_official_model",
+      "scenario_ground_truth": "none",
+      "rule_analysis": {
+        "drift_detected": false,
+        "drift_type": "none",
+        "confidence_score": 100.0,
+        "urgency": "low",
+        "root_cause": "未检测到明显异常",
+        "evidence": [],
+        "recommendations": [
+          "✅ 系统运行正常，继续监控"
+        ],
+        "metrics": {
+          "image_quality": {
+            "sharpness": 823.9862174479167,
+            "brightness": 100.36621744791667,
+            "contrast": 21.88626732178974,
+            "noise_level": 7.2379929116638255,
+            "overexposure_ratio": 0.0,
+            "underexposure_ratio": 0.0,
+            "saturation": 63.16056966145833,
+            "histogram_entropy": 1.5026254448275578
+          },
+          "consistency": {
+            "confidence_mean": 1.0,
+            "confidence_std": 0.0,
+            "confidence_min": 1.0,
+            "confidence_max": 1.0,
+            "ng_rate": 0.0,
+            "detection_rate": 1.0,
+            "stability_score": 1.0
+          },
+          "image_drift": {
+            "drift_detected": false,
+            "issues": [],
+            "changes": {
+              "sharpness_change": 0.0,
+              "brightness_change": 1.4159001979502203e-16,
+              "contrast_change": 1.623261576113281e-16,
+              "noise_change": -1.227105954012265e-16
+            },
+            "current_metrics": {
+              "sharpness": 823.9862174479167,
+              "brightness": 100.36621744791667,
+              "contrast": 21.88626732178974,
+              "noise_level": 7.2379929116638255,
+              "overexposure_ratio": 0.0,
+              "underexposure_ratio": 0.0,
+              "saturation": 63.16056966145833,
+              "histogram_entropy": 1.5026254448275578
+            },
+            "baseline_metrics": {
+              "sharpness": 823.9862174479167,
+              "brightness": 100.36621744791665,
+              "contrast": 21.886267321789738,
+              "noise_level": 7.237992911663826,
+              "overexposure_ratio": 0.0,
+              "underexposure_ratio": 0.0,
+              "saturation": 63.160569661458325,
+              "histogram_entropy": 1.5026254448275578
+            },
+            "registration": {
+              "shift_x": 0.0,
+              "shift_y": 0.0,
+              "response": 1.0
+            }
+          },
+          "consistency_drift": {
+            "drift_detected": false,
+            "issues": [],
+            "current_metrics": {
+              "confidence_mean": 1.0,
+              "confidence_std": 0.0,
+              "confidence_min": 1.0,
+              "confidence_max": 1.0,
+              "ng_rate": 0.0,
+              "detection_rate": 1.0,
+              "stability_score": 1.0
+            },
+            "baseline_metrics": {
+              "confidence_mean": 1.0,
+              "confidence_std": 0.0,
+              "confidence_min": 1.0,
+              "confidence_max": 1.0,
+              "ng_rate": 0.0,
+              "detection_rate": 1.0,
+              "stability_score": 1.0
+            }
+          }
+        }
+      },
+      "vision_latency_ms": {
+        "p50": 13.15,
+        "p95": 13.962499999999999
+      }
+    },
+    {
+      "analysis": {
+        "alternative_causes": [
+          "镜头光学参数（如焦距、光圈、色散）在检测帧中发生局部波动，导致清晰度指标异常，但未出现明显亮度改变或平移配准异常",
+          "产品本身存在局部结构缺陷（如划痕、变形、异物等），在检测帧中触发NG，但整体图像亮度与清晰度未发生显著改变"
+        ],
+        "confidence_score": 0.45,
+        "drift_detected": true,
+        "drift_type": "optical",
+        "evidence": [
+          "当前帧清晰度指标（sharpness）较基线帧（baseline）下降，但亮度、对比度等指标未出现明显异常变化",
+          "当前帧NG标记为上升，但检测置信度（0.9477）未达高阈值，且未伴随传感器数据异常"
+        ],
+        "recommendations": [
+          "人工复核当前帧与基线帧的清晰度、亮度、对比度等指标，确认是否存在局部参数波动或产品缺陷",
+          "复核检测帧的NG判定依据，确认是否为产品缺陷导致，而非镜头或环境因素"
+        ],
+        "requires_human_review": true,
+        "root_cause": "unknown",
+        "urgency": "low",
+        "verification_steps": [
+          "提取当前帧与基线帧的清晰度、亮度、对比度等指标，与历史帧对比，确认指标变化范围",
+          "复核检测帧的NG判定逻辑，确认NG触发条件是否与产品缺陷相关"
+        ]
+      },
+      "raw_response": "{\"alternative_causes\": [\n  \"镜头光学参数（如焦距、光圈、色散）在检测帧中发生局部波动，导致清晰度指标异常，但未出现明显亮度改变或平移配准异常\",\n  \"产品本身存在局部结构缺陷（如划痕、变形、异物等），在检测帧中触发NG，但整体图像亮度与清晰度未发生显著改变\"\n],\n  \"confidence_score\": 0.45,\n  \"drift_detected\": true,\n  \"drift_type\": \"optical\",\"evidence\": [\n    \"当前帧清晰度指标（sharpness）较基线帧（baseline）下降，但亮度、对比度等指标未出现明显异常变化\",\n    \"当前帧NG标记为上升，但检测置信度（0.9477）未达高阈值，且未伴随传感器数据异常\"\n  ],\n  \"recommendations\": [\n    \"人工复核当前帧与基线帧的清晰度、亮度、对比度等指标，确认是否存在局部参数波动或产品缺陷\",\n    \"复核检测帧的NG判定依据，确认是否为产品缺陷导致，而非镜头或环境因素\"\n  ],\"requires_human_review\": true,\n  \"root_cause\": \"unknown\",\"urgency\": \"low\",\"verification_steps\": [\n    \"提取当前帧与基线帧的清晰度、亮度、对比度等指标，与历史帧对比，确认指标变化范围\",\n    \"复核检测帧的NG判定逻辑，确认NG触发条件是否与产品缺陷相关\"\n  ]}",
+      "inference": {
+        "backend": "ollama",
+        "model": "spark-drift:1.7b-q4",
+        "elapsed_ms": 3186.42,
+        "prompt_tokens": 1555,
+        "output_tokens": 376,
+        "tokens_per_second": 128.63,
+        "load_ms": 1.7881,
+        "finish_reason": "stop",
+        "runtime": {
+          "parent_model": "Spark-X2.5-1.7B-Q4_K_M.gguf",
+          "format": "gguf",
+          "family": "spark2_5",
+          "families": [
+            "spark2_5"
+          ],
+          "parameter_size": "1.7B",
+          "quantization_level": "Q4_K_M",
+          "runtime_version": "0.35.1"
+        }
+      },
+      "snapshot": {
+        "frame": 30,
+        "created": 1791122805.122856,
+        "source": "synthetic",
+        "synthetic": true,
+        "injected": true,
+        "baseline_generation": 2,
+        "window_count": 30,
+        "warmup": false,
+        "vision_ms": 14.31,
+        "detection": {
+          "timestamp": 1791122805.109841,
+          "detected": true,
+          "confidence": 0.9477272773692811,
+          "is_ng": false,
+          "metadata": {
+            "detector": "reference_residual_demo",
+            "residual": 0.013068180657679737
+          }
+        },
+        "current_metrics": {
+          "image_quality": {
+            "sharpness": 1.60921875,
+            "brightness": 100.304267578125,
+            "contrast": 17.28074298581932,
+            "noise_level": 0.5388256197533708,
+            "overexposure_ratio": 0.0,
+            "underexposure_ratio": 0.0,
+            "saturation": 61.89014322916667,
+            "histogram_entropy": 2.9307128646281466
+          },
+          "consistency": {
+            "confidence_mean": 0.9477272773692813,
+            "confidence_std": 2.220446049250313e-16,
+            "confidence_min": 0.9477272773692811,
+            "confidence_max": 0.9477272773692811,
+            "ng_rate": 0.0,
+            "detection_rate": 1.0,
+            "stability_score": 0.9999999999999998
+          },
+          "relative_changes": {
+            "sharpness_change": -0.9980470319576654,
+            "brightness_change": -0.000617238263699584,
+            "contrast_change": -0.21042986765428048,
+            "noise_change": -0.9255559343136316
+          },
+          "registration": {
+            "shift_x": 0.004494409796734544,
+            "shift_y": 0.013008158053992247,
+            "response": 1.418603367805481
+          }
+        },
+        "baseline": {
+          "sample_count": 20,
+          "image_quality": {
+            "sharpness": 823.9862174479167,
+            "brightness": 100.36621744791665,
+            "contrast": 21.886267321789738,
+            "noise_level": 7.237992911663826,
+            "overexposure_ratio": 0.0,
+            "underexposure_ratio": 0.0,
+            "saturation": 63.160569661458325,
+            "histogram_entropy": 1.5026254448275578
+          },
+          "consistency": {
+            "confidence_mean": 1.0,
+            "confidence_std": 0.0,
+            "confidence_min": 1.0,
+            "confidence_max": 1.0,
+            "ng_rate": 0.0,
+            "detection_rate": 1.0,
+            "stability_score": 1.0
+          }
+        },
+        "recent_trend": [
+          {
+            "frame": 26,
+            "confidence": 0.9477272773692811,
+            "sharpness": 1.60921875,
+            "brightness": 100.304267578125
+          },
+          {
+            "frame": 27,
+            "confidence": 0.9477272773692811,
+            "sharpness": 1.60921875,
+            "brightness": 100.304267578125
+          },
+          {
+            "frame": 28,
+            "confidence": 0.9477272773692811,
+            "sharpness": 1.60921875,
+            "brightness": 100.304267578125
+          },
+          {
+            "frame": 29,
+            "confidence": 0.9477272773692811,
+            "sharpness": 1.60921875,
+            "brightness": 100.304267578125
+          },
+          {
+            "frame": 30,
+            "confidence": 0.9477272773692811,
+            "sharpness": 1.60921875,
+            "brightness": 100.304267578125
+          }
+        ],
+        "limitation": "Reference-residual demo detector; no product defect ground truth or environmental sensors."
+      },
+      "operator_context": "近期没有维护记录；没有温湿度传感器。",
+      "created": 1791122808.3724594,
+      "provenance": "local_official_model",
+      "scenario_ground_truth": "focus_change",
+      "rule_analysis": {
+        "drift_detected": true,
+        "drift_type": "optical",
+        "confidence_score": 35.078118721693386,
+        "urgency": "critical",
+        "root_cause": "光学系统出现问题（镜头污染、失焦或镜头老化）",
+        "evidence": [
+          "清晰度下降 99.8%"
+        ],
+        "recommendations": [
+          "🔧 检查并清洁镜头",
+          "🎯 重新对焦或调整焦距",
+          "📷 检查相机是否需要维护或更换"
+        ],
+        "metrics": {
+          "image_quality": {
+            "sharpness": 1.60921875,
+            "brightness": 100.304267578125,
+            "contrast": 17.28074298581932,
+            "noise_level": 0.5388256197533708,
+            "overexposure_ratio": 0.0,
+            "underexposure_ratio": 0.0,
+            "saturation": 61.89014322916667,
+            "histogram_entropy": 2.9307128646281466
+          },
+          "consistency": {
+            "confidence_mean": 0.9477272773692813,
+            "confidence_std": 2.220446049250313e-16,
+            "confidence_min": 0.9477272773692811,
+            "confidence_max": 0.9477272773692811,
+            "ng_rate": 0.0,
+            "detection_rate": 1.0,
+            "stability_score": 0.9999999999999998
+          },
+          "image_drift": {
+            "drift_detected": true,
+            "issues": [
+              {
+                "type": "sharpness_drop",
+                "severity": "high",
+                "change": -0.9980470319576654,
+                "description": "清晰度下降 99.8%"
+              }
+            ],
+            "changes": {
+              "sharpness_change": -0.9980470319576654,
+              "brightness_change": -0.000617238263699584,
+              "contrast_change": -0.21042986765428048,
+              "noise_change": -0.9255559343136316
+            },
+            "current_metrics": {
+              "sharpness": 1.60921875,
+              "brightness": 100.304267578125,
+              "contrast": 17.28074298581932,
+              "noise_level": 0.5388256197533708,
+              "overexposure_ratio": 0.0,
+              "underexposure_ratio": 0.0,
+              "saturation": 61.89014322916667,
+              "histogram_entropy": 2.9307128646281466
+            },
+            "baseline_metrics": {
+              "sharpness": 823.9862174479167,
+              "brightness": 100.36621744791665,
+              "contrast": 21.886267321789738,
+              "noise_level": 7.237992911663826,
+              "overexposure_ratio": 0.0,
+              "underexposure_ratio": 0.0,
+              "saturation": 63.160569661458325,
+              "histogram_entropy": 1.5026254448275578
+            },
+            "registration": {
+              "shift_x": 0.004494409796734544,
+              "shift_y": 0.013008158053992247,
+              "response": 1.418603367805481
+            }
+          },
+          "consistency_drift": {
+            "drift_detected": false,
+            "issues": [],
+            "current_metrics": {
+              "confidence_mean": 0.9477272773692813,
+              "confidence_std": 2.220446049250313e-16,
+              "confidence_min": 0.9477272773692811,
+              "confidence_max": 0.9477272773692811,
+              "ng_rate": 0.0,
+              "detection_rate": 1.0,
+              "stability_score": 0.9999999999999998
+            },
+            "baseline_metrics": {
+              "confidence_mean": 1.0,
+              "confidence_std": 0.0,
+              "confidence_min": 1.0,
+              "confidence_max": 1.0,
+              "ng_rate": 0.0,
+              "detection_rate": 1.0,
+              "stability_score": 1.0
+            }
+          }
+        }
+      },
+      "vision_latency_ms": {
+        "p50": 13.905000000000001,
+        "p95": 15.755999999999998
+      }
+    },
+    {
+      "analysis": {
+        "alternative_causes": [
+          "镜头光学参数劣化（如衍射/像差提升）导致清晰度下降，与产品无关",
+          "背景光源强度异常波动（如环境光变化）引起整体亮度变化，与产品无关"
+        ],
+        "confidence_score": 3,
+        "drift_detected": true,
+        "drift_type": "optical",
+        "evidence": [
+          "当前帧清晰度显著低于基线（sharpness 344.18 vs 基线 823.99），但未检测到产品缺陷",
+          "当前帧亮度、对比度等指标与基线差异较小（相对变化幅度<0.5），无异常波动"
+        ],
+        "recommendations": [
+          "人工复核当前帧与基线对比，重点检查镜头光学参数及背景环境光源状态",
+          "确认产品是否存在与清晰度下降相关的缺陷（如表面划痕、材质变化等），但需结合产品本身状态判断"
+        ],
+        "requires_human_review": true,
+        "root_cause": "unknown",
+        "urgency": "low",
+        "verification_steps": [
+          "人工复核当前帧清晰度变化与产品缺陷的关联性，排除镜头污染、光照异常等外部因素",
+          "对比当前帧与基线帧的指标变化，判断是否为产品本身特性导致"
+        ]
+      },
+      "raw_response": "{\"alternative_causes\": [\n  \"镜头光学参数劣化（如衍射/像差提升）导致清晰度下降，与产品无关\",\n  \"背景光源强度异常波动（如环境光变化）引起整体亮度变化，与产品无关\"\n],\n\"confidence_score\": 3,\n\"drift_detected\": true,\n\"drift_type\": \"optical\",\"evidence\": [\n  \"当前帧清晰度显著低于基线（sharpness 344.18 vs 基线 823.99），但未检测到产品缺陷\",\n  \"当前帧亮度、对比度等指标与基线差异较小（相对变化幅度<0.5），无异常波动\"\n],\n\"recommendations\": [\n  \"人工复核当前帧与基线对比，重点检查镜头光学参数及背景环境光源状态\",\n  \"确认产品是否存在与清晰度下降相关的缺陷（如表面划痕、材质变化等），但需结合产品本身状态判断\"\n],\"requires_human_review\": true,\n\"root_cause\": \"unknown\",\"urgency\": \"low\",\"verification_steps\": [\n  \"人工复核当前帧清晰度变化与产品缺陷的关联性，排除镜头污染、光照异常等外部因素\",\n  \"对比当前帧与基线帧的指标变化，判断是否为产品本身特性导致\"\n]\n}",
+      "inference": {
+        "backend": "ollama",
+        "model": "spark-drift:1.7b-q4",
+        "elapsed_ms": 2803.32,
+        "prompt_tokens": 1577,
+        "output_tokens": 326,
+        "tokens_per_second": 128.34,
+        "load_ms": 1.5927,
+        "finish_reason": "stop",
+        "runtime": {
+          "parent_model": "Spark-X2.5-1.7B-Q4_K_M.gguf",
+          "format": "gguf",
+          "family": "spark2_5",
+          "families": [
+            "spark2_5"
+          ],
+          "parameter_size": "1.7B",
+          "quantization_level": "Q4_K_M",
+          "runtime_version": "0.35.1"
+        }
+      },
+      "snapshot": {
+        "frame": 30,
+        "created": 1791122809.0810552,
+        "source": "synthetic",
+        "synthetic": true,
+        "injected": true,
+        "baseline_generation": 2,
+        "window_count": 30,
+        "warmup": false,
+        "vision_ms": 14.18,
+        "detection": {
+          "timestamp": 1791122809.0671575,
+          "detected": false,
+          "confidence": 0.4494968341503268,
+          "is_ng": true,
+          "metadata": {
+            "detector": "reference_residual_demo",
+            "residual": 0.1376257914624183
+          }
+        },
+        "current_metrics": {
+          "image_quality": {
+            "sharpness": 344.17786458333336,
+            "brightness": 65.271640625,
+            "contrast": 14.106828066209625,
+            "noise_level": 4.691985908772602,
+            "overexposure_ratio": 0.0,
+            "underexposure_ratio": 0.0,
+            "saturation": 64.120751953125,
+            "histogram_entropy": 1.5026254448275578
+          },
+          "consistency": {
+            "confidence_mean": 0.4494968341503269,
+            "confidence_std": 5.551115123125783e-17,
+            "confidence_min": 0.4494968341503268,
+            "confidence_max": 0.4494968341503268,
+            "ng_rate": 1.0,
+            "detection_rate": 0.0,
+            "stability_score": 0.9999999999999998
+          },
+          "relative_changes": {
+            "sharpness_change": -0.5823014301752099,
+            "brightness_change": -0.3496652331361236,
+            "contrast_change": -0.3554484253162249,
+            "noise_change": -0.3517559403503151
+          },
+          "registration": {
+            "shift_x": 0.00023124204705027296,
+            "shift_y": -0.0002984806339441093,
+            "response": 0.999825090347634
+          }
+        },
+        "baseline": {
+          "sample_count": 20,
+          "image_quality": {
+            "sharpness": 823.9862174479167,
+            "brightness": 100.36621744791665,
+            "contrast": 21.886267321789738,
+            "noise_level": 7.237992911663826,
+            "overexposure_ratio": 0.0,
+            "underexposure_ratio": 0.0,
+            "saturation": 63.160569661458325,
+            "histogram_entropy": 1.5026254448275578
+          },
+          "consistency": {
+            "confidence_mean": 1.0,
+            "confidence_std": 0.0,
+            "confidence_min": 1.0,
+            "confidence_max": 1.0,
+            "ng_rate": 0.0,
+            "detection_rate": 1.0,
+            "stability_score": 1.0
+          }
+        },
+        "recent_trend": [
+          {
+            "frame": 26,
+            "confidence": 0.4494968341503268,
+            "sharpness": 344.17786458333336,
+            "brightness": 65.271640625
+          },
+          {
+            "frame": 27,
+            "confidence": 0.4494968341503268,
+            "sharpness": 344.17786458333336,
+            "brightness": 65.271640625
+          },
+          {
+            "frame": 28,
+            "confidence": 0.4494968341503268,
+            "sharpness": 344.17786458333336,
+            "brightness": 65.271640625
+          },
+          {
+            "frame": 29,
+            "confidence": 0.4494968341503268,
+            "sharpness": 344.17786458333336,
+            "brightness": 65.271640625
+          },
+          {
+            "frame": 30,
+            "confidence": 0.4494968341503268,
+            "sharpness": 344.17786458333336,
+            "brightness": 65.271640625
+          }
+        ],
+        "limitation": "Reference-residual demo detector; no product defect ground truth or environmental sensors."
+      },
+      "operator_context": "近期没有维护记录；没有温湿度传感器。",
+      "created": 1791122811.9497187,
+      "provenance": "local_official_model",
+      "scenario_ground_truth": "light_fade",
+      "rule_analysis": {
+        "drift_detected": true,
+        "drift_type": "illumination",
+        "confidence_score": 51.7079427929916,
+        "urgency": "high",
+        "root_cause": "光照系统出现问题（光源老化、环境光变化或光源位置偏移）",
+        "evidence": [
+          "清晰度下降 58.2%",
+          "亮度变化 -35.0%",
+          "对比度变化 -35.5%",
+          "平均置信度下降 55.1%",
+          "NG率增加 2000.0% (0.0% → 100.0%)"
+        ],
+        "recommendations": [
+          "💡 检查光源是否正常工作",
+          "🔆 调整光源亮度或更换老化灯具",
+          "🌓 检查环境光是否稳定（关闭窗户或使用遮光）"
+        ],
+        "metrics": {
+          "image_quality": {
+            "sharpness": 344.17786458333336,
+            "brightness": 65.271640625,
+            "contrast": 14.106828066209625,
+            "noise_level": 4.691985908772602,
+            "overexposure_ratio": 0.0,
+            "underexposure_ratio": 0.0,
+            "saturation": 64.120751953125,
+            "histogram_entropy": 1.5026254448275578
+          },
+          "consistency": {
+            "confidence_mean": 0.4494968341503269,
+            "confidence_std": 5.551115123125783e-17,
+            "confidence_min": 0.4494968341503268,
+            "confidence_max": 0.4494968341503268,
+            "ng_rate": 1.0,
+            "detection_rate": 0.0,
+            "stability_score": 0.9999999999999998
+          },
+          "image_drift": {
+            "drift_detected": true,
+            "issues": [
+              {
+                "type": "sharpness_drop",
+                "severity": "high",
+                "change": -0.5823014301752099,
+                "description": "清晰度下降 58.2%"
+              },
+              {
+                "type": "brightness_change",
+                "severity": "medium",
+                "change": -0.3496652331361236,
+                "description": "亮度变化 -35.0%"
+              },
+              {
+                "type": "contrast_change",
+                "severity": "medium",
+                "change": -0.3554484253162249,
+                "description": "对比度变化 -35.5%"
+              }
+            ],
+            "changes": {
+              "sharpness_change": -0.5823014301752099,
+              "brightness_change": -0.3496652331361236,
+              "contrast_change": -0.3554484253162249,
+              "noise_change": -0.3517559403503151
+            },
+            "current_metrics": {
+              "sharpness": 344.17786458333336,
+              "brightness": 65.271640625,
+              "contrast": 14.106828066209625,
+              "noise_level": 4.691985908772602,
+              "overexposure_ratio": 0.0,
+              "underexposure_ratio": 0.0,
+              "saturation": 64.120751953125,
+              "histogram_entropy": 1.5026254448275578
+            },
+            "baseline_metrics": {
+              "sharpness": 823.9862174479167,
+              "brightness": 100.36621744791665,
+              "contrast": 21.886267321789738,
+              "noise_level": 7.237992911663826,
+              "overexposure_ratio": 0.0,
+              "underexposure_ratio": 0.0,
+              "saturation": 63.160569661458325,
+              "histogram_entropy": 1.5026254448275578
+            },
+            "registration": {
+              "shift_x": 0.00023124204705027296,
+              "shift_y": -0.0002984806339441093,
+              "response": 0.999825090347634
+            }
+          },
+          "consistency_drift": {
+            "drift_detected": true,
+            "issues": [
+              {
+                "type": "confidence_drop",
+                "severity": "high",
+                "change": -0.5505031658496731,
+                "description": "平均置信度下降 55.1%"
+              },
+              {
+                "type": "ng_rate_increase",
+                "severity": "critical",
+                "change": 20.0,
+                "description": "NG率增加 2000.0% (0.0% → 100.0%)"
+              }
+            ],
+            "current_metrics": {
+              "confidence_mean": 0.4494968341503269,
+              "confidence_std": 5.551115123125783e-17,
+              "confidence_min": 0.4494968341503268,
+              "confidence_max": 0.4494968341503268,
+              "ng_rate": 1.0,
+              "detection_rate": 0.0,
+              "stability_score": 0.9999999999999998
+            },
+            "baseline_metrics": {
+              "confidence_mean": 1.0,
+              "confidence_std": 0.0,
+              "confidence_min": 1.0,
+              "confidence_max": 1.0,
+              "ng_rate": 0.0,
+              "detection_rate": 1.0,
+              "stability_score": 1.0
+            }
+          }
+        }
+      },
+      "vision_latency_ms": {
+        "p50": 13.325,
+        "p95": 14.609499999999999
+      }
+    },
+    {
+      "analysis": {
+        "alternative_causes": [
+          "镜头光学参数波动（如表面微划痕、光学膜层变化）导致清晰度下降，NG为检测算法对缺陷的识别，与产品缺陷无关",
+          "背景光照强度局部变化（如环境光干扰、光源偏移）导致整体亮度波动，清晰度下降为光学成像特性变化，非镜头污染"
+        ],
+        "confidence_score": 0.45,
+        "drift_detected": true,
+        "drift_type": "optical",
+        "evidence": [
+          "当前帧清晰度较基线显著下降，但未出现明显亮度异常或平移位移异常，NG未确认产品缺陷",
+          "对比当前帧与基线帧，清晰度、亮度等指标存在可量化变化，但变化幅度未达显著阈值，无法直接关联产品缺陷"
+        ],
+        "recommendations": [
+          "人工复核：提取当前帧与基线帧的清晰度、亮度、对比度等指标，对比变化幅度，判断是否为光学参数波动或光照变化；检查是否存在镜头污染等物理因素",
+          "人工复核：结合产品外观特征，确认NG是否对应产品缺陷，若为产品缺陷则记录并评估影响，若为检测误报则记录检测逻辑"
+        ],
+        "requires_human_review": true,
+        "root_cause": "unknown",
+        "urgency": "low",
+        "verification_steps": [
+          "人工复核当前帧与基线帧的图像质量指标，对比清晰度、亮度、对比度等变化，判断变化来源",
+          "人工复核NG检测逻辑，确认NG是否为产品缺陷，排除检测误报可能",
+          "人工复核是否存在镜头污染等物理因素，通过目视检查或辅助检测确认"
+        ]
+      },
+      "raw_response": "{\"alternative_causes\": [\n  \"镜头光学参数波动（如表面微划痕、光学膜层变化）导致清晰度下降，NG为检测算法对缺陷的识别，与产品缺陷无关\",\n  \"背景光照强度局部变化（如环境光干扰、光源偏移）导致整体亮度波动，清晰度下降为光学成像特性变化，非镜头污染\"\n],\n  \"confidence_score\": 0.45,\n  \"drift_detected\": true,\n  \"drift_type\": \"optical\",\"evidence\": [\n    \"当前帧清晰度较基线显著下降，但未出现明显亮度异常或平移位移异常，NG未确认产品缺陷\",\n    \"对比当前帧与基线帧，清晰度、亮度等指标存在可量化变化，但变化幅度未达显著阈值，无法直接关联产品缺陷\"\n  ],\n  \"recommendations\": [\n    \"人工复核：提取当前帧与基线帧的清晰度、亮度、对比度等指标，对比变化幅度，判断是否为光学参数波动或光照变化；检查是否存在镜头污染等物理因素\",\n    \"人工复核：结合产品外观特征，确认NG是否对应产品缺陷，若为产品缺陷则记录并评估影响，若为检测误报则记录检测逻辑\"\n  ],\"requires_human_review\": true,\n  \"root_cause\": \"unknown\",\"urgency\": \"low\",\"verification_steps\": [\n    \"人工复核当前帧与基线帧的图像质量指标，对比清晰度、亮度、对比度等变化，判断变化来源\",\n    \"人工复核NG检测逻辑，确认NG是否为产品缺陷，排除检测误报可能\",\n    \"人工复核是否存在镜头污染等物理因素，通过目视检查或辅助检测确认\"\n  ]}",
+      "inference": {
+        "backend": "ollama",
+        "model": "spark-drift:1.7b-q4",
+        "elapsed_ms": 3322.78,
+        "prompt_tokens": 1615,
+        "output_tokens": 414,
+        "tokens_per_second": 135.34,
+        "load_ms": 1.314,
+        "finish_reason": "stop",
+        "runtime": {
+          "parent_model": "Spark-X2.5-1.7B-Q4_K_M.gguf",
+          "format": "gguf",
+          "family": "spark2_5",
+          "families": [
+            "spark2_5"
+          ],
+          "parameter_size": "1.7B",
+          "quantization_level": "Q4_K_M",
+          "runtime_version": "0.35.1"
+        }
+      },
+      "snapshot": {
+        "frame": 30,
+        "created": 1791122812.6668947,
+        "source": "synthetic",
+        "synthetic": true,
+        "injected": true,
+        "baseline_generation": 2,
+        "window_count": 30,
+        "warmup": false,
+        "vision_ms": 13.67,
+        "detection": {
+          "timestamp": 1791122812.6543126,
+          "detected": true,
+          "confidence": 0.8702402982026144,
+          "is_ng": false,
+          "metadata": {
+            "detector": "reference_residual_demo",
+            "residual": 0.0324399254493464
+          }
+        },
+        "current_metrics": {
+          "image_quality": {
+            "sharpness": 824.8893424479166,
+            "brightness": 101.29590494791667,
+            "contrast": 22.665419814465498,
+            "noise_level": 7.243603480954475,
+            "overexposure_ratio": 0.0,
+            "underexposure_ratio": 0.0,
+            "saturation": 61.95744466145833,
+            "histogram_entropy": 1.7632133167387225
+          },
+          "consistency": {
+            "confidence_mean": 0.8702402982026142,
+            "confidence_std": 2.220446049250313e-16,
+            "confidence_min": 0.8702402982026144,
+            "confidence_max": 0.8702402982026144,
+            "ng_rate": 0.0,
+            "detection_rate": 1.0,
+            "stability_score": 0.9999999999999998
+          },
+          "relative_changes": {
+            "sharpness_change": 0.0010960438183021154,
+            "brightness_change": 0.009262952451928954,
+            "contrast_change": 0.03560006287138984,
+            "noise_change": 0.0007751554000014307
+          },
+          "registration": {
+            "shift_x": 35.00019957396944,
+            "shift_y": -2.9582793104054872e-08,
+            "response": 0.9980289390473627
+          }
+        },
+        "baseline": {
+          "sample_count": 20,
+          "image_quality": {
+            "sharpness": 823.9862174479167,
+            "brightness": 100.36621744791665,
+            "contrast": 21.886267321789738,
+            "noise_level": 7.237992911663826,
+            "overexposure_ratio": 0.0,
+            "underexposure_ratio": 0.0,
+            "saturation": 63.160569661458325,
+            "histogram_entropy": 1.5026254448275578
+          },
+          "consistency": {
+            "confidence_mean": 1.0,
+            "confidence_std": 0.0,
+            "confidence_min": 1.0,
+            "confidence_max": 1.0,
+            "ng_rate": 0.0,
+            "detection_rate": 1.0,
+            "stability_score": 1.0
+          }
+        },
+        "recent_trend": [
+          {
+            "frame": 26,
+            "confidence": 0.8702402982026144,
+            "sharpness": 824.8893424479166,
+            "brightness": 101.29590494791667
+          },
+          {
+            "frame": 27,
+            "confidence": 0.8702402982026144,
+            "sharpness": 824.8893424479166,
+            "brightness": 101.29590494791667
+          },
+          {
+            "frame": 28,
+            "confidence": 0.8702402982026144,
+            "sharpness": 824.8893424479166,
+            "brightness": 101.29590494791667
+          },
+          {
+            "frame": 29,
+            "confidence": 0.8702402982026144,
+            "sharpness": 824.8893424479166,
+            "brightness": 101.29590494791667
+          },
+          {
+            "frame": 30,
+            "confidence": 0.8702402982026144,
+            "sharpness": 824.8893424479166,
+            "brightness": 101.29590494791667
+          }
+        ],
+        "limitation": "Reference-residual demo detector; no product defect ground truth or environmental sensors."
+      },
+      "operator_context": "近期没有维护记录；没有温湿度传感器。",
+      "created": 1791122816.05075,
+      "provenance": "local_official_model",
+      "scenario_ground_truth": "position_shift",
+      "rule_analysis": {
+        "drift_detected": true,
+        "drift_type": "mechanical",
+        "confidence_score": 60.0,
+        "urgency": "medium",
+        "root_cause": "机械系统出现问题（相机位置偏移或角度变化）",
+        "evidence": [
+          "画面平移 +35.0px / -0.0px（待人工核验）"
+        ],
+        "recommendations": [
+          "📐 重新标定相机位置和角度",
+          "🔩 检查固定螺丝是否松动",
+          "⚙️ 检查机械振动是否过大"
+        ],
+        "metrics": {
+          "image_quality": {
+            "sharpness": 824.8893424479166,
+            "brightness": 101.29590494791667,
+            "contrast": 22.665419814465498,
+            "noise_level": 7.243603480954475,
+            "overexposure_ratio": 0.0,
+            "underexposure_ratio": 0.0,
+            "saturation": 61.95744466145833,
+            "histogram_entropy": 1.7632133167387225
+          },
+          "consistency": {
+            "confidence_mean": 0.8702402982026142,
+            "confidence_std": 2.220446049250313e-16,
+            "confidence_min": 0.8702402982026144,
+            "confidence_max": 0.8702402982026144,
+            "ng_rate": 0.0,
+            "detection_rate": 1.0,
+            "stability_score": 0.9999999999999998
+          },
+          "image_drift": {
+            "drift_detected": true,
+            "issues": [
+              {
+                "type": "position_shift",
+                "severity": "high",
+                "change": 35.00019957396944,
+                "description": "画面平移 +35.0px / -0.0px（待人工核验）"
+              }
+            ],
+            "changes": {
+              "sharpness_change": 0.0010960438183021154,
+              "brightness_change": 0.009262952451928954,
+              "contrast_change": 0.03560006287138984,
+              "noise_change": 0.0007751554000014307
+            },
+            "current_metrics": {
+              "sharpness": 824.8893424479166,
+              "brightness": 101.29590494791667,
+              "contrast": 22.665419814465498,
+              "noise_level": 7.243603480954475,
+              "overexposure_ratio": 0.0,
+              "underexposure_ratio": 0.0,
+              "saturation": 61.95744466145833,
+              "histogram_entropy": 1.7632133167387225
+            },
+            "baseline_metrics": {
+              "sharpness": 823.9862174479167,
+              "brightness": 100.36621744791665,
+              "contrast": 21.886267321789738,
+              "noise_level": 7.237992911663826,
+              "overexposure_ratio": 0.0,
+              "underexposure_ratio": 0.0,
+              "saturation": 63.160569661458325,
+              "histogram_entropy": 1.5026254448275578
+            },
+            "registration": {
+              "shift_x": 35.00019957396944,
+              "shift_y": -2.9582793104054872e-08,
+              "response": 0.9980289390473627
+            }
+          },
+          "consistency_drift": {
+            "drift_detected": false,
+            "issues": [],
+            "current_metrics": {
+              "confidence_mean": 0.8702402982026142,
+              "confidence_std": 2.220446049250313e-16,
+              "confidence_min": 0.8702402982026144,
+              "confidence_max": 0.8702402982026144,
+              "ng_rate": 0.0,
+              "detection_rate": 1.0,
+              "stability_score": 0.9999999999999998
+            },
+            "baseline_metrics": {
+              "confidence_mean": 1.0,
+              "confidence_std": 0.0,
+              "confidence_min": 1.0,
+              "confidence_max": 1.0,
+              "ng_rate": 0.0,
+              "detection_rate": 1.0,
+              "stability_score": 1.0
+            }
+          }
+        }
+      },
+      "vision_latency_ms": {
+        "p50": 13.505,
+        "p95": 14.205999999999998
+      }
+    }
+  ],
+  "limitations": [
+    "Synthetic frames and software-injected perturbations only; no factory validation.",
+    "One sample per scenario; not an accuracy estimate or latency distribution.",
+    "Rule/model comparison is descriptive; no claim of model irreplaceability.",
+    "No network-disconnection or physical power measurement performed."
+  ]
+}

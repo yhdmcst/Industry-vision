@@ -1,0 +1,10 @@
+{
+  "runtime": "Ollama",
+  "version": "0.40.2",
+  "platform": "Darwin",
+  "architecture": "arm64",
+  "url": "https://github.com/ollama/ollama/releases/download/v0.40.2/ollama-darwin.tgz",
+  "size": 167473220,
+  "sha256": "e888b7637291ceb80b622c00ea067f62c86d9c50d419b3eb903032e4f1f8a4f6",
+  "license": "MIT"
+}
